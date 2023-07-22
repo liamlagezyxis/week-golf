@@ -6,6 +6,9 @@
   "scripts": {
     "start": "ts-node src/server.ts",
     "build": "tsc",
+    "ts-watch": "tsc --watch",
+    "clean-dist": "rimraf dist/*",
+    "dev": "npm run clean-dist && npm run ts-watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
